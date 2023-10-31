@@ -1,0 +1,7 @@
+body {
+    --black: #171718;
+}
+
+.nav {
+    background-color: var(--black);
+}
