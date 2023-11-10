@@ -1,7 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Geologica:wght@900&family=JetBrains+Mono:wght@400;500;700;800&family=Oswald&family=Playfair+Display&family=Raleway:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
+
 body {
+    font-family: 'Ubuntu', sans-serif;
     --black: #171718;
+    --white: #fff;
+    --green: #11A644;
+    --gray: #26292D;
+    --lightgray: #74777a;
 }
 
 .nav {
     background-color: var(--black);
+    padding: 18px 0;
+    border-bottom: 1px solid var(--gray);
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo {
+    margin-right: auto;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 24px;
+    color: var(--white);
+}
+
+.logo strong {
+    font-weight: 700;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 60px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 16px;
+    color: var(--white);
+    font-weight: 500;   
+}
+
+.nav-list__link {
+    color: #fff;
+}
+
+.nav-list__link:hover {
+    color: var(--green);
+    transition: color 0.3s ease-in; 
+}
+
+.nav-list__link--active {
+    background-color: var(--green);
+    padding: 8px 20px;
+    border-radius: 500px;
+}
+
+.nav-list__link--active:hover {
+    background-color: var(--white);
+    transition: all 0.3s ease-in;
+}
+
+.header {
+    min-height: 700px;
+    padding: 40px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--white);
+    background: var(--black);
+    background-image: url("./img/header-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+}
+
+.header__wrapper {
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.header__title strong {
+    font-size: 60px;
+}
+
+.header__text {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.header__title em {
+    color: var(--green);
+}
+
+.button {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 12px 30px;
+    border-radius: 80px;
+}
+
+.button:hover {
+    background-color: var(--lightgray);
+    color: var(--white);
+    transition: all 0.3s ease-in;
+}
+
+.button:active {
+    position: relative;
+    top: 2px;
 }
